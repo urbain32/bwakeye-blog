@@ -81,6 +81,14 @@ small {
   border-radius: 50%;
   overflow: hidden;
 }
+ .logo {
+  display: flex;
+  gap: 0.8rem;
+}
+ .logo img {
+  width: 2rem;
+  height: 2rem;
+}
 .text-muted {
   color: var(--color-info-dark);
 }
