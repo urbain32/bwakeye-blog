@@ -7,7 +7,7 @@ const Home = () => {
     data: blogs,
     error,
     loading,
-  } = useFetch('http://localhost:8000/blogs');
+  } = useFetch('https://bwakeye-blog.herokuapp.com/api');
   return (
     <div className='home'>
       {error && <div>{error}</div>}
