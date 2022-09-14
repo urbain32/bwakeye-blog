@@ -9,12 +9,14 @@ const BlogDetails = () => {
     data: blog,
     loading,
     error,
-  } = useFetch('http://localhost:8000/blogs/' + id);
+  } = useFetch('https://bwakeye-blog.herokuapp.com/api/blogs/' + id);
   const history = useHistory();
   const handleDelete = () => {
-    fetch('http://localhost:8000/blogs/' + blog.id, {
+    fetch('https://bwakeye-blog.herokuapp.com/api/blogs/' + blog.id, {
       method: 'DELETE',
-    }).then(() => {history.push('/')});
+    }).then(() => {
+      history.push('/');
+    });
   };
   return (
     <div className='blog-details'>

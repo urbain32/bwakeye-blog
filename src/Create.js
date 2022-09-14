@@ -11,7 +11,7 @@ const Create = () => {
     e.preventDefault();
     const blog = { title, body, author };
     setLoading(true);
-    fetch('http://localhost:8000/blogs', {
+    fetch('https://bwakeye-blog.herokuapp.com/api/blogs', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(blog),
